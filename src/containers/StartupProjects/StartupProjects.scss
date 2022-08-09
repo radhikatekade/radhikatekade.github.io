@@ -5,6 +5,25 @@
   height: auto;
   width: 250px;
 }
+
+.image-main {
+  display: flex;
+}
+
+.image-div {
+  margin: auto;
+}
+
+.image-div > img {
+  max-width: 100%;
+  height: auto;
+
+}
+.card-video {
+  max-width: 100%;
+  height: inherit;
+  width: inherit;
+}
 .card-title {
   color: $titleColor;
   font-size: 22px;
@@ -55,10 +74,16 @@
   overflow: hidden;
   text-align: center;
 }
-
+.project-video {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 1rem 1rem;
 }
 
@@ -84,5 +109,13 @@
   .project-subtitle {
     font-size: 16px;
     text-align: center;
+  }
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem 1rem;
+  }
+  .image-main {
+    display: block;
   }
 }

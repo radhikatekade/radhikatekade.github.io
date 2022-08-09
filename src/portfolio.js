@@ -50,7 +50,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Skills",
-  subTitle: "I believe in having a positive impact in the direction of new technologies.",
+  subTitle:
+    "I believe in having a positive impact in the direction of new technologies.",
   skills: [
     // emoji(
     //   "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -66,46 +67,46 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "python",
+      skillName: "python"
     },
     {
-      skillName: "docker",
+      skillName: "docker"
     },
     {
-      skillName: "html",
+      skillName: "html"
     },
     {
-      skillName: "css",
+      skillName: "css"
     },
     {
-      skillName: "matlab",
+      skillName: "matlab"
     },
     {
-      skillName: "JavaScript",
+      skillName: "JavaScript"
     },
     {
-      skillName: "reactjs",
+      skillName: "reactjs"
     },
     {
-      skillName: "nodejs",
+      skillName: "nodejs"
     },
     {
-      skillName: "npm",
+      skillName: "npm"
     },
     {
-      skillName: "mysql",
+      skillName: "mysql"
     },
     {
-      skillName: "aws",
+      skillName: "aws"
     },
     {
-      skillName: "firebase",
+      skillName: "firebase"
     },
     {
-      skillName: "anysys",
+      skillName: "anysys"
     },
     {
-      skillName: "solidworks",
+      skillName: "solidworks"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -128,7 +129,8 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Visvesvaraya National Institute of Technology (VNIT), Nagpur, India",
+      schoolName:
+        "Visvesvaraya National Institute of Technology (VNIT), Nagpur, India",
       logo: require("./assets/images/vnitlogo.png"),
       subHeader: "Bachelor of Technology (BTech) in Mechanical Engineering",
       duration: "July 2016 - July 2020",
@@ -201,7 +203,7 @@ const workExperiences = {
       desc: "Worked on",
       descBullets: [
         "Comprehensive technical training about regular automotive servicing and body shop repairs and cross-training exercises at Production Management Division",
-        "Assimilated technical knowledge of engines and engine performances, transmissions, brakes, suspensions, and steering systems along with electrical connections of automobiles along with the understanding of business process flow of the organization",
+        "Assimilated technical knowledge of engines and engine performances, transmissions, brakes, suspensions, and steering systems along with electrical connections of automobiles along with the understanding of business process flow of the organization"
       ]
     }
   ]
@@ -212,7 +214,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -222,26 +224,129 @@ const bigProjects = {
   subtitle: "",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/sentimentAnalysis.png"),
       projectName: "Multi Modal Analysis of songs for emotion detection",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      videoLink:"",
+      projectDesc: "Oregon State University",
+      date: "Apr 2022 - Jul 2022",
+      descBullets: [
+        "Classify a song based on its emotion using a novel approach of late fusion multi-model neural network",
+        "Sentiment analysis of audio by implementing CNN on generated mel-spectograms",
+        "Analysed lyrics by by creating applying self attention mechanism on GloVe embeddings created using data.",
+        "Our results showed 34% improvement in accuracy as compared to the prior multi-model and uni-model approaches."
+      ],
+      footerLink: [
+        {
+          name: "Report",
+          url: "https://drive.google.com/file/d/1Fch4ia8ZK8K2D4o-XHJdxeCtwk1cRJ0T/view"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/armManipulator.jpg"),
+      projectName: "Scrabble Bot",
+      projectDesc: "Oregon State University",
+      date: "Jan 2022 - Apr 2022",
+      descBullets: [
+        "Carried out a study of the current commonly used car seat to understand the current Indian automobile industry as a part of my final year project thesis",
+        "Performed analysis of head restraint, seat belt, posture, comfort, Musculoskeletal Disorders (MSDs) in static and dynamic scenarios"
+      ],
+      footerLink: [
+        {
+          name: "Report",
+          url: "https://drive.google.com/file/d/1Fch4ia8ZK8K2D4o-XHJdxeCtwk1cRJ0T/view"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/carSeat.webp"),
+      projectName:
+        "Ergonomic Assessment of Car Driver seat considering Indian Anthropometry",
+      projectDesc: "Department of Mechanical Engineering, VNIT",
+      date: "Sep 2019 - Apr 2020",
+      descBullets: [
+        "Carried out a study of the current commonly used car seat to understand the current Indian automobile industry as a part of my final year project thesis",
+        "Performed analysis of head restraint, seat belt, posture, comfort, Musculoskeletal Disorders (MSDs) in static and dynamic scenarios"
+      ],
+      footerLink: [
+        {
+          name: "Report",
+          url: "https://drive.google.com/file/d/1Fch4ia8ZK8K2D4o-XHJdxeCtwk1cRJ0T/view"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/f1.png"),
+      projectName: "SUPRA SAEINDIA 2018",
+      projectDesc: "Buddha International Circuit (BIC), India",
+      date: "Aug. 2017 - Jun. 2018",
+      videoLink: "",
+      descBullets: [
+        "Designed, simulated, and modeled a prototype of a Formula-style race car on a series of rules proposed by the Society of Automotive Engineers, India ",
+        "Competition held from June 11-16, 2018 : Technical Inspection (TI) cleared, Egress Test cleared, with a presentation of design, cost, and manufacturing analysis under Evaluation Event"
+      ],
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://suprasaeindia.org/"
+        },
+        {
+          name: "Certificate",
+          url: "https://drive.google.com/file/d/1cgq0NfjrzlsSUFz4M9Zv5BFTciQbBcjY/view"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: "",
+      projectName: "Autonomous Exploration and Mapping (AutoExMap)",
+      projectDesc: "IvLabs, India",
+      date: "Jun 2018 - Aug 2018",
+      videoLink: "https://www.youtube.com/embed/ceo_qGIUQ7U",
+      descBullets: [
+        "Implemented autonomous exploration on mobile robots and simultaneous 3D mapping using an RGBD camera in an unknown environment utilizing Robotic Operating System(ROS).",
+        "Executed Large Scale Direct monocular Simultaneous Localization and Mapping(LSD-SLAM) on ROS Kinetic",
+        "Generated 3D map during various sessions and stitched to give an integrated map of the complete area."
+      ],
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://www.ivlabs.in/turtlebot-2.html"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/2wheeledBot.jpeg"),
+      projectName: "ROS Serial based miniature custom robot",
+      projectDesc: "IvLabs, India",
+      date: "Nov. 2017 - Dec. 2017",
+      descBullets: [
+        "Fabricated a miniature tactical robot, aided with multiple sensors including depth camera sensor",
+        "Used AtMega328 in ROS Serial with Raspberry Pi 3b for the generation of 3D map while autonomous exploration of an unknown area",
+        "Future prospect includes implementation of swarm intelligence on multiple miniature robots"
+      ],
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://suprasaeindia.org/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image:"",
+      projectName: "All Terrain Ground Vehicle (ATGV) ",
+      projectDesc: "IvLabs, India",
+      date: "Jun 2017 - Aug 2017",
+      videoLink:"https://www.youtube.com/embed/pMOcBq0gpsk",
+      descBullets: [
+        "Built a continuous tracked all-terrain robot operated by a manual or motion-controlled android app",
+        "Robust mechanical vehicle successful traversing various terrains such as soft grounds, paved surfaces, and stairs.",
+        "Capability to climb an upward trajectory of 12 inches (higher than any standard height of a stair) owing to rubber gripped conveyor belts"
+      ],
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://www.ivlabs.in/atgv-stair-climbing-bot.html"
         }
       ]
     }
@@ -254,52 +359,53 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  subtitle: "",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+      title: "3D Design Competition, March 2019",
+      subtitle: "ASTRAL Informatics Pvt. Ltd.",
+      description:
+        "Secured 1st position (with cash prize) in 3D design modeling competition on Solid Works Software",
+      image: require("./assets/images/astralLogo.png"),
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://drive.google.com/file/d/1f-hln6SolUqIVjlmbOezaKvPyE27NULP/view"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      title: "Autonomous Stair Climbing Robot",
+      subtitle: "Centro Congressi Federico II via Partenope",
+      description:
+        "Unmesh Patil, Radhika Tekade, Dr. Pradyumn Chaturvedi, et.al., 'Deep Learning based Stair Detection and Statistical Image Filtering for Autonomous Stair Climbing', 2019 Third IEEE International Conference on Robotic Computing (IRC)       (accepted), Feb. 25-27, Naples, Italy, DOI: 10.1109/IRC.2019.00031",
+      image: require("./assets/images/ieeerasLogo.png"),
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Paper",
+          url: "https://ieeexplore.ieee.org/document/8675676"
+        },
+        {
+          name: "Website",
+          url: "https://www.ivlabs.in/autonomous-multi-storey-surveillance-robot.html##"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "Head Restraint Analysis of Car Driver Seat",
+      subtitle: "Department of Mechanical Engineering, BITS Pilani",
+      description:
+        "Radhika Tekade, Girish Ramteke, P. V. Kane, 'Analysis of Design of Head Restraint of Car Seat considering Indian Anthropometry', 1st International and 13th National Conference on Industrial Problems on Machines and Mechanisms (IPRoMM-2020) (accepted), Hyderabad, India",
+      image: require("./assets/images/bitsPilani.jpg"),
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Paper",
+          url: "https://www.springerprofessional.de/analysis-of-design-of-head-restraints-of-car-seat-considering-in/19377212"
+        },
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1OwYwVr305-jkeZ-3bFKQ07-SrT0LqJyk/view"
         }
       ]
     }
@@ -365,8 +471,7 @@ const podcastSection = {
 
 const contactInfo = {
   title: emoji("Contact:"),
-  subtitle:
-    "",
+  subtitle: "",
   number: "",
   email_address: "tekader@oregonstate.edu"
 };
@@ -396,4 +501,3 @@ export {
   contactInfo,
   twitterDetails
 };
-

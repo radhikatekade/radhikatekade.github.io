@@ -3,6 +3,17 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
+
+const GetDescBullets = ({descBullets, isDark}) => {
+  return descBullets
+    ? descBullets.map((item, i) => (
+        <li key={i} className={isDark ? "subTitle dark-mode-text" : "subTitle"}>
+          {item}
+        </li>
+      ))
+    : null;
+};
+
 export default function StartupProject() {
   function openUrlInNewTab(url) {
     if (!url) {
@@ -17,6 +28,21 @@ export default function StartupProject() {
     return null;
   }
   return (
+    <>
+      <div className="image-main">
+        <div className="image-div">
+          <img
+            alt="man sitting on table"
+            src={require("../../assets/images/serviceAnimation.gif")}
+          ></img>
+        </div>
+        <div className="image-div">
+          <img
+            alt="man sitting on table"
+            src={require("../../assets/images/wproudCoder.svg")}
+          ></img>
+        </div>
+      </div>
       <div className="main" id="projects">
         <div>
           <h1 className="skills-heading">{bigProjects.title}</h1>
@@ -41,6 +67,18 @@ export default function StartupProject() {
                       : "project-card project-card-light"
                   }
                 >
+                  {project.videoLink ? (
+                    <div className="project-video">
+                      <iframe
+                        title={project.projectName}
+                        className="card-video"
+                        src={project.videoLink + "?autoplay=1&loop=1&controls=0&mute=1"}
+                        frameborder="0"
+                        loop="1"
+                        allow="autoplay"
+                      ></iframe>
+                    </div>
+                  ) : null}
                   {project.image ? (
                     <div className="project-image">
                       <img
@@ -56,6 +94,15 @@ export default function StartupProject() {
                     >
                       {project.projectName}
                     </h5>
+                    <h5
+                      className={
+                        isDark
+                          ? "experience-text-date dark-mode-text"
+                          : "experience-text-date"
+                      }
+                    >
+                      {project.date}
+                    </h5>
                     <p
                       className={
                         isDark ? "dark-mode card-subtitle" : "card-subtitle"
@@ -63,6 +110,12 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
+                    <ul>
+                      <GetDescBullets
+                        descBullets={project.descBullets}
+                        isDark={isDark}
+                      />
+                    </ul>
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
@@ -87,5 +140,6 @@ export default function StartupProject() {
           </div>
         </div>
       </div>
+    </>
   );
 }
