@@ -3,16 +3,15 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
-
-const GetDescBullets = ({descBullets, isDark}) => {
-  return descBullets
-    ? descBullets.map((item, i) => (
-        <li key={i} className={isDark ? "subTitle dark-mode-text" : "subTitle"}>
-          {item}
-        </li>
-      ))
-    : null;
-};
+// const GetDescBullets = ({descBullets, isDark}) => {
+//   return descBullets
+//     ? descBullets.map((item, i) => (
+//         <li key={i} className={isDark ? "subTitle dark-mode-text" : "subTitle"}>
+//           {item}
+//         </li>
+//       ))
+//     : null;
+// };
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
@@ -29,7 +28,7 @@ export default function StartupProject() {
   }
   return (
     <>
-      <div className="image-main">
+      {/* <div className="image-main">
         <div className="image-div">
           <img
             alt="man sitting on table"
@@ -42,7 +41,7 @@ export default function StartupProject() {
             src={require("../../assets/images/wproudCoder.svg")}
           ></img>
         </div>
-      </div>
+      </div> */}
       <div className="main" id="projects">
         <div>
           <h1 className="skills-heading">{bigProjects.title}</h1>
@@ -72,7 +71,10 @@ export default function StartupProject() {
                       <iframe
                         title={project.projectName}
                         className="card-video"
-                        src={project.videoLink + "?autoplay=1&loop=1&controls=0&mute=1"}
+                        src={
+                          project.videoLink +
+                          "?autoplay=1&loop=1&controls=0&mute=1"
+                        }
                         frameborder="0"
                         loop="1"
                         allow="autoplay"
@@ -105,17 +107,20 @@ export default function StartupProject() {
                     </h5>
                     <p
                       className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                        isDark ? "dark-mode card-project-subtitle" : "card-project-subtitle"
                       }
                     >
                       {project.projectDesc}
                     </p>
-                    <ul>
-                      <GetDescBullets
-                        descBullets={project.descBullets}
-                        isDark={isDark}
-                      />
-                    </ul>
+                    <p
+                      className={
+                        isDark ? "dark-mode project-desc-card" : "project-desc-card"
+                      }
+                    >
+                      {project.descBullets.map((text,idx) => {
+                        return <span>{text}</span>;
+                      })}
+                    </p>
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {

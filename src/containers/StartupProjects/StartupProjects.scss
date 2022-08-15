@@ -4,8 +4,11 @@
   max-width: 100%;
   height: auto;
   width: 250px;
+  margin:3rem;
 }
-
+.project-desc-card{
+  text-align: justify;
+}
 .image-main {
   display: flex;
 }
@@ -35,6 +38,13 @@
   color: $cardSubtitle;
   font-size: 17px;
   line-height: 1.5rem;
+  text-align: center;
+}
+.card-project-subtitle {
+  color: $cardSubtitle;
+  font-size: 17px;
+  line-height: 1.5rem;
+  text-align: center;
 }
 .project-card {
   display: flex;
@@ -76,14 +86,14 @@
 }
 .project-video {
   position: relative;
-  height: 400px;
+  height: 300px;
   width: 100%;
   overflow: hidden;
   text-align: center;
 }
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem 1rem;
 }
 
@@ -118,4 +128,5 @@
   .image-main {
     display: block;
   }
+  
 }

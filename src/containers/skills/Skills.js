@@ -21,7 +21,7 @@ export default function Skills() {
             {illustration.animated ? (
             <img
               alt="women Working"
-              src={require("../../assets/images/firmware.svg")}
+              src={require("../../assets/images/aiGirl.svg")}
             ></img>
             ) : (
               <DisplayLottie animationData={codingPerson} />

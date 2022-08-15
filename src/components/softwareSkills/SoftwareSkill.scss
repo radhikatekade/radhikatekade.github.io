@@ -9,6 +9,10 @@
   text-align: center;
 }
 
+.software-skills-main-div{
+  max-width: 60%;
+  margin:auto;
+}
 .software-skill-inline {
   display: inline-block;
   margin-right: 20px;
@@ -28,4 +32,13 @@
 }
 .software-skill-inline > svg:hover ~ p {
   color: $skillsColor;
+}
+
+
+@media (max-width: 1000px) {
+  .software-skills-main-div{
+    max-width: 100%;
+  margin:auto;
+
+  } 
 }
