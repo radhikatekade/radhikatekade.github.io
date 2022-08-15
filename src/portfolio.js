@@ -27,7 +27,7 @@ const greeting = {
     "I am a Robotics Master's student at Oregon State University graduating in April 2023. I work at the intersection of Mechanical Hardware with Robotics in the aspect of design, analysis, and controls."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/17_E1VQRN3Kpg-x4o4j5iq6bbcjnCMW5C/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -51,7 +51,7 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "Skills",
   subTitle:
-    "I believe in having a positive impact in the direction of new technologies.",
+    "",
   skills: [
     // emoji(
     //   "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -73,37 +73,40 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "docker"
     },
     {
-      skillName: "html"
+      skillName: "git"
     },
     {
-      skillName: "css"
+      skillName: "vscode"
     },
     {
       skillName: "matlab"
     },
     {
-      skillName: "JavaScript"
-    },
-    {
-      skillName: "reactjs"
-    },
-    {
-      skillName: "nodejs"
-    },
-    {
-      skillName: "npm"
-    },
-    {
-      skillName: "mysql"
+      skillName: "c++"
     },
     {
       skillName: "aws"
     },
     {
-      skillName: "firebase"
+      skillName: "linux"
     },
     {
-      skillName: "anysys"
+      skillName: "opencv"
+    },
+    {
+      skillName: "pytorch"
+    },
+    {
+      skillName: "ansys"
+    },
+    {
+      skillName: "ros"
+    },
+    {
+      skillName: "simulink"
+    },
+    {
+      skillName: "arduino"
     },
     {
       skillName: "solidworks"
@@ -176,10 +179,17 @@ const workExperiences = {
       company: "Technip Energies, Mumbai, India",
       companylogo: require("./assets/images/techniplogo.webp"),
       date: "November 2020 – September 2021",
-      desc: "Worked as a Graduate Engineer Trainee",
+      desc: "Worked on",
       descBullets: [
+        "At the position of Graduate Engineer Trainee in 'Risk Management and Cost Control Department'",
         "Analyzed cost reports, detect issues, and effectively communicate the project’s cost performance, concerns, and recovery plans",
-        "Preparation of PMR (Progress Monthly Report) of the project in co-ordination with all departments and provide required feedback to top management w.r.t to project"
+        "Preparation of PMR (Progress Monthly Report) of the project in co-ordination with all departments and provide required feedback to top management with respect to project"
+      ],
+      footerLink: [
+        {
+          name: "Website",
+          url: "https://www.technipenergies.com/"
+        }
       ]
     },
     {
@@ -190,9 +200,19 @@ const workExperiences = {
       desc: "Worked on",
       descBullets: [
         "Improvement in Test Automation strategies for the platform built for the verification of automated driving solutions",
-        "Consisted of MATLAB codes, Simulink models, and Autoware tools integrated with Prescan software to modify features such as sensors, ground truth, scenario generation, and vehicle dynamics",
-        "Supported by the launch files in Python and Shell scripts on Linux OS",
+        "Consisted of MATLAB, Simulink, & Autoware integrated with Prescan to modify features such as sensors, ground truth, & vehicle dynamics supported by the launch files in Python & Shell on Linux",
+
         "Resulting program allowed any number of simulations to run, implementing different vehicle scenarios in succession without any intermediate manual changes"
+      ],
+      footerLink: [
+        {
+          name: "Website",
+          url: "https://sites.google.com/view/adeye/demo-videos"
+        },
+        {
+          name: "Video",
+          url: "https://www.youtube.com/watch?v=vJiPh1wQmpk"
+        }
       ]
     },
     {
@@ -204,6 +224,12 @@ const workExperiences = {
       descBullets: [
         "Comprehensive technical training about regular automotive servicing and body shop repairs and cross-training exercises at Production Management Division",
         "Assimilated technical knowledge of engines and engine performances, transmissions, brakes, suspensions, and steering systems along with electrical connections of automobiles along with the understanding of business process flow of the organization"
+      ],
+      footerLink: [
+        {
+          name: "Website",
+          url: "https://www.marutisuzuki.com/"
+        }
       ]
     }
   ]
@@ -225,14 +251,11 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/sentimentAnalysis.png"),
-      projectName: "Multi Modal Analysis of songs for emotion detection",
+      projectName: "Multi Modal Analysis of songs",
       projectDesc: "Oregon State University",
       date: "Apr 2022 - Jul 2022",
       descBullets: [
-        "Classify a song based on its emotion using a novel approach of late fusion multi-model neural network",
-        "Sentiment analysis of audio by implementing CNN on generated mel-spectograms",
-        "Analysed lyrics by by creating applying self attention mechanism on GloVe embeddings created using data.",
-        "Our results showed 34% improvement in accuracy as compared to the prior multi-model and uni-model approaches."
+        "Classify a song based on its emotion using a novel approach of late fusion multi-model Neural Network applied on both audio and lyrical data"
       ],
       footerLink: [
         {
@@ -247,8 +270,7 @@ const bigProjects = {
       projectDesc: "Oregon State University",
       date: "Jan 2022 - Apr 2022",
       descBullets: [
-        "Carried out a study of the current commonly used car seat to understand the current Indian automobile industry as a part of my final year project thesis",
-        "Performed analysis of head restraint, seat belt, posture, comfort, Musculoskeletal Disorders (MSDs) in static and dynamic scenarios"
+        "A 4-DOF manipulator implementing alphabet identification using Optical Character Recognition to arrange word blocks based on user input"
       ],
       footerLink: [
         {
@@ -258,31 +280,33 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/carSeat.webp"),
-      projectName:
-        "Ergonomic Assessment of Car Driver seat considering Indian Anthropometry",
-      projectDesc: "Department of Mechanical Engineering, VNIT",
-      date: "Sep 2019 - Apr 2020",
+      image: require("./assets/images/turtlebot_rider.jpg"),
+      projectName: "Turtlebot tracker",
+      projectDesc: "Oregon State University",
+      date: "Oct 2021 - Dec 2021",
       descBullets: [
-        "Carried out a study of the current commonly used car seat to understand the current Indian automobile industry as a part of my final year project thesis",
-        "Performed analysis of head restraint, seat belt, posture, comfort, Musculoskeletal Disorders (MSDs) in static and dynamic scenarios"
+        "A turtlebot capable of following a person by tracking aruco markers and controlling its speed with a Proportional Integral feedback"
+        // "The system relies on ROS Melodic and runs on a Turtlebot2",
+        // "Detected aruco markers using the aruco library built into opencv in Python.",
+        // "Performed Pose Estimation of the aruco marker using ROS library for tracking it with a RGBD camera on turtlebot",
+        // "A proportional-integral feedback is used to follow the person and control its speed"
       ],
       footerLink: [
         {
-          name: "Report",
-          url: "https://drive.google.com/file/d/1Fch4ia8ZK8K2D4o-XHJdxeCtwk1cRJ0T/view"
+          name: "Github",
+          url: "https://github.com/EverardoG/hot_chocolate"
         }
       ]
     },
     {
       image: require("./assets/images/f1.png"),
-      projectName: "SUPRA SAEINDIA 2018",
+      projectName: "SUPRA SAEINDIA '18",
       projectDesc: "Buddha International Circuit (BIC), India",
       date: "Aug. 2017 - Jun. 2018",
       videoLink: "",
       descBullets: [
-        "Designed, simulated, and modeled a prototype of a Formula-style race car on a series of rules proposed by the Society of Automotive Engineers, India ",
-        "Competition held from June 11-16, 2018 : Technical Inspection (TI) cleared, Egress Test cleared, with a presentation of design, cost, and manufacturing analysis under Evaluation Event"
+        "Designed, simulated, & modeled a prototype of a Formula-style car based on rules proposed by the Society of Automotive Engineers, India "
+        // "Competition held from June 11-16, 2018 : Technical Inspection (TI) cleared, Egress Test cleared, with a presentation of design, cost, and manufacturing analysis under Evaluation Event"
       ],
       footerLink: [
         {
@@ -297,32 +321,30 @@ const bigProjects = {
       ]
     },
     {
-      image: "",
-      projectName: "Autonomous Exploration and Mapping (AutoExMap)",
-      projectDesc: "IvLabs, India",
-      date: "Jun 2018 - Aug 2018",
-      videoLink: "https://www.youtube.com/embed/ceo_qGIUQ7U",
+      image: require("./assets/images/carSeat.webp"),
+      projectName: "Ergonomic Assessment of Car",
+      projectDesc: "Mechanical Engg Dept, VNIT",
+      date: "Sep 2019 - Apr 2020",
       descBullets: [
-        "Implemented autonomous exploration on mobile robots and simultaneous 3D mapping using an RGBD camera in an unknown environment utilizing Robotic Operating System(ROS).",
-        "Executed Large Scale Direct monocular Simultaneous Localization and Mapping(LSD-SLAM) on ROS Kinetic",
-        "Generated 3D map during various sessions and stitched to give an integrated map of the complete area."
+        // "Carried out a study of the current commonly used car seat to understand the current Indian automobile industry as a part of my final year project thesis",
+        "Performed analysis of head restraint, seat belt, posture, comfort, Musculoskeletal Disorders (MSDs) in static and dynamic scenarios for current commonly used cars in Indian market"
       ],
       footerLink: [
         {
-          name: "Visit Website",
-          url: "https://www.ivlabs.in/turtlebot-2.html"
+          name: "Report",
+          url: "https://drive.google.com/file/d/1Fch4ia8ZK8K2D4o-XHJdxeCtwk1cRJ0T/view"
         }
       ]
     },
     {
       image: require("./assets/images/2wheeledBot.jpeg"),
-      projectName: "ROS Serial based miniature custom robot",
+      projectName: "ROS Serial miniature robot",
       projectDesc: "IvLabs, India",
       date: "Nov. 2017 - Dec. 2017",
       descBullets: [
-        "Fabricated a miniature tactical robot, aided with multiple sensors including depth camera sensor",
-        "Used AtMega328 in ROS Serial with Raspberry Pi 3b for the generation of 3D map while autonomous exploration of an unknown area",
-        "Future prospect includes implementation of swarm intelligence on multiple miniature robots"
+        "Fabricated a miniature tactical robot, aided with multiple sensors using AtMega328 in ROS Serial for the generation of 3D map while autonomous exploration of an unknown environment"
+        // "Used AtMega328 in ROS Serial with Raspberry Pi 3b for the generation of 3D map while autonomous exploration of an unknown area",
+        // "Future prospect includes implementation of swarm intelligence on multiple miniature robots"
       ],
       footerLink: [
         {
@@ -333,15 +355,33 @@ const bigProjects = {
       ]
     },
     {
-      image:"",
+      image: "",
+      projectName: "AutoExMap",
+      projectDesc: "IvLabs, India",
+      date: "Jun 2018 - Aug 2018",
+      videoLink: "https://www.youtube.com/embed/ceo_qGIUQ7U",
+      descBullets: [
+        // "Implemented autonomous exploration on mobile robots and simultaneous 3D mapping using an RGBD camera in an unknown environment utilizing Robotic Operating System(ROS).",
+        "Executed Large Scale Direct monocular Simultaneous Localization and Mapping(LSD-SLAM) on ROS Kinetic while generating map of the complete area"
+        // "Generated 3D map during various sessions and stitched to give an integrated map of the complete area."
+      ],
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://www.ivlabs.in/turtlebot-2.html"
+        }
+      ]
+    },
+    {
+      image: "",
       projectName: "All Terrain Ground Vehicle (ATGV) ",
       projectDesc: "IvLabs, India",
       date: "Jun 2017 - Aug 2017",
-      videoLink:"https://www.youtube.com/embed/pMOcBq0gpsk",
+      videoLink: "https://www.youtube.com/embed/pMOcBq0gpsk",
       descBullets: [
-        "Built a continuous tracked all-terrain robot operated by a manual or motion-controlled android app",
-        "Robust mechanical vehicle successful traversing various terrains such as soft grounds, paved surfaces, and stairs.",
-        "Capability to climb an upward trajectory of 12 inches (higher than any standard height of a stair) owing to rubber gripped conveyor belts"
+        "Built a continuous tracked all-terrain robot with robust mechanical design operated by a manual or motion-controlled android app capable of climbing stairs as well"
+        // "Robust mechanical vehicle successful traversing various terrains such as soft grounds, paved surfaces, and stairs.",
+        // "Capability to climb an upward trajectory of 12 inches (higher than any standard height of a stair) owing to rubber gripped conveyor belts"
       ],
       footerLink: [
         {
@@ -358,23 +398,10 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Publications And Achievements 🏆 "),
   subtitle: "",
 
   achievementsCards: [
-    {
-      title: "3D Design Competition, March 2019",
-      subtitle: "ASTRAL Informatics Pvt. Ltd.",
-      description:
-        "Secured 1st position (with cash prize) in 3D design modeling competition on Solid Works Software",
-      image: require("./assets/images/astralLogo.png"),
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/1f-hln6SolUqIVjlmbOezaKvPyE27NULP/view"
-        }
-      ]
-    },
     {
       title: "Autonomous Stair Climbing Robot",
       subtitle: "Centro Congressi Federico II via Partenope",
@@ -406,6 +433,19 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/1OwYwVr305-jkeZ-3bFKQ07-SrT0LqJyk/view"
+        }
+      ]
+    },
+    {
+      title: "3D Design Competition, March 2019",
+      subtitle: "ASTRAL Informatics Pvt. Ltd.",
+      description:
+        "Secured 1st position (with cash prize) in 3D design modeling competition on Solid Works Software",
+      image: require("./assets/images/astralLogo.png"),
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1f-hln6SolUqIVjlmbOezaKvPyE27NULP/view"
         }
       ]
     }
