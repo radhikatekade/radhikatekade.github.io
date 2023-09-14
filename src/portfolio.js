@@ -24,7 +24,7 @@ const greeting = {
   username: "Radhika Tekade",
   title: "Hi all, I'm Radhika",
   subTitle: emoji(
-    "I am a Robotics Master's student at Oregon State University graduating in April 2023. I work at the intersection of Mechanical Hardware with Robotics in the aspect of design, analysis, and controls."
+    "I am a Robotics Master's student at Oregon State University graduating in December 2023. My coursework and research have provided me with a solid foundation in computer vision and deep learning, allowing me to explore complex problems and develop innovative solutions. I have gained expertise in areas such as machine learning, artificial intelligence, and autonomous systems, and I am excited to leverage these skills in practical settings. I am actively seeking full-time, part-time, or internship opportunities that will allow me to apply my academic insights to real-world challenges. My goal is to contribute to projects that push the boundaries of robotics and have a meaningful impact on industries ranging from healthcare to autonomous vehicles."
   ),
   resumeLink:
     "https://drive.google.com/file/d/17_E1VQRN3Kpg-x4o4j5iq6bbcjnCMW5C/view?usp=sharing", // Set to empty to hide the button
